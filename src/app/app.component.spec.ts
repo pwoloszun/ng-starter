@@ -1,9 +1,9 @@
-import { render } from '@testing-library/angular';
+import { render, screen } from '@testing-library/angular';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
 
-const renderAppComponent = () => {
+async function renderAppComponent() {
   return render(AppComponent, {
     imports: [
       RouterTestingModule,
@@ -12,9 +12,9 @@ const renderAppComponent = () => {
 };
 
 describe('AppComponent', () => {
-  it('should render counter', async () => {
-    const { getByText } = await renderAppComponent();
+  it('should render cmp', async () => {
+    await renderAppComponent();
 
-    expect(getByText(/ng-starter/)).toBeDefined();
+    expect(screen.getByText(/ng-starter/));
   });
 });
