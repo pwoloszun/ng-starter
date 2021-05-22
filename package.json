@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.0.1",
-    "@angular/cli": "~11.2.13",
+    "@angular/cli": "~12.0.1",
     "@angular/compiler-cli": "~12.0.1",
     "@testing-library/angular": "~10.7.1",
     "@types/jest": "^26.0.14",
